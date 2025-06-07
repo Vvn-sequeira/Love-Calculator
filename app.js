@@ -39,7 +39,7 @@ app.listen(2020 , ()=> {
 
 // Routes ........
 app.get("/", (req,res)=> {
-     res.send("yo u r in Root "); 
+     res.redirect("/landing");
 })
 
 // app.get("/check", async (req, res) => {
