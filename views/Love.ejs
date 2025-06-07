@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love Calculator</title>
+  <link rel="stylesheet" href="/Love.css" />
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <div class="score-board">
+        <% if (typeof no === "undefined") { %>
+            <del>Your score is</del>
+      <%  } else { %>
+        <h2><%= no %>% Match 🌹 </h2>
+       <% } %>
+      </div>
+    </div>
+
+    <form action="/landing" method="post">
+      <div class="bottom">
+        <div class="left-boy">
+          <h2>👨 BF Name</h2>
+          <input type="text" name="boy" placeholder="Boy Friend" required />
+        </div>
+        <div class="right-girl">
+          <h2>👩 GF Name</h2>
+          <input type="text" name="girl" placeholder="Girl Friend" required />
+        </div>
+      </div>
+      <div class="calculate-back">
+        <button class="calculate-btn" type="submit">💖 Calculate Love 💖</button>
+      </div>
+    </form>
+    <div class="link">
+      <a href="/validate">Show Data </a>
+     </div>
+  </div>
+   
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <style>
+        body{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh ;
+             background-color: rgb(11, 87, 201);
+        }
+        input{
+              padding: 12px ;
+        }
+        button{
+              padding: 12px ;
+              color: rgb(255, 255, 255);
+              background-color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+     <form action="/validate" method="post">
+        <input type="password" name="code" id="code" placeholder="enter the code ">
+        <button type="submit">submit</button>
+     </form>
+    </div>
+</body>
+</html>

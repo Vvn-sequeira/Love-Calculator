@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+ 
+</head>
+<body>
+  <div class="heart-background">
+    <svg width="150" height="150" viewBox="0 0 24 24" fill="red" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+        2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09
+        C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5
+        c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+    </svg>
+  </div>
+  <div class="arrow"></div>
+  <form class="container" method="POST" action="/calculate">
+    <div class="form-section">
+      <div class="side girl">
+        <h2>👩 Girl's Name</h2>
+        <input type="text" name="girlName" placeholder="Enter girl name" required />
+      </div>
+
+      <div class="side boy">
+        <h2>👨 Boy's Name</h2>
+        <input type="text" name="boyName" placeholder="Enter boy name" required />
+      </div>
+    </div>
+
+    <div class="calculate-back" style="width: 100%; text-align: center; padding: 20px;">
+      <button class="calculate-btn" type="submit">💖 Calculate Love 💖</button>
+    </div>
+  </form>
+</body>
+</html>
